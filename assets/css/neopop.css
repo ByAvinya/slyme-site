@@ -7,6 +7,12 @@
   background-color: #ff6f92;
   color: white;
   font-weight: 600;
+  transition: 200ms all ease-in;
+}
+
+.neo-btn:active {
+  box-shadow: 3px 3px black;
+  transform: translateY(4px);
 }
 
 .neo-btn-white {

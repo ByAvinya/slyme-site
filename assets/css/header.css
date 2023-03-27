@@ -16,11 +16,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
 }
 
 .slyme-header .nav-menu > a {
   margin: 0 1rem;
-  color: white;
 }
 
 .slyme-header .action-menu {
