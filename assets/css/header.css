@@ -1,0 +1,38 @@
+.slyme-header {
+  padding: 10px 20px;
+}
+
+.slyme-header .logo-container > img {
+  width: 70px;
+}
+
+.slyme-header .nav-menu-container {
+  background-color: #282828;
+  border-radius: 20px;
+  padding: 1.5rem 0.5rem;
+}
+
+.slyme-header .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slyme-header .nav-menu > a {
+  margin: 0 1rem;
+  color: white;
+}
+
+.slyme-header .action-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slyme-header .action-btn-1 {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px 60px 1px 50px;
+  text-align: center;
+  font-weight: 500;
+}
