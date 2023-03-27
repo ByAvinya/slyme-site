@@ -30,3 +30,18 @@ main {
   background-color: #fcff70;
   border-radius: 10px;
 }
+
+.main-section-1 .section-left {
+  padding: 4rem 2.5rem;
+}
+
+.main-section-1 .section-left-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+}
+
+.main-section-1 .section-left-bottom > h5 {
+  margin: 0 !important;
+}

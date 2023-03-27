@@ -1,0 +1,15 @@
+.neo-btn {
+  border: 1px solid black;
+  border-radius: 0px;
+  box-shadow: 6px 6px black;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #ff6f92;
+  color: white;
+  font-weight: 600;
+}
+
+.neo-btn-white {
+  background-color: white;
+  color: black;
+}
