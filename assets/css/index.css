@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 16px;
+}
+
 html,
 body {
   width: 100%;
@@ -27,4 +31,10 @@ a:hover {
   height: 100%;
   background-color: black;
   min-height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    font-size: 13px;
+  }
 }

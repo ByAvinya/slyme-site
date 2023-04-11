@@ -3,7 +3,7 @@
 }
 
 .slyme-header .logo-container > img {
-  width: 70px;
+  width: 150px;
 }
 
 .slyme-header .nav-menu-container {
@@ -35,4 +35,49 @@
   border-radius: 50px 60px 1px 50px;
   text-align: center;
   font-weight: 500;
+}
+
+.slyme-header-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .slyme-header-desktop {
+    display: none;
+  }
+
+  .slyme-header-mobile {
+    display: block;
+    background-color: black;
+    position: relative;
+  }
+
+  .slyme-header .logo-container > img {
+    width: 80px;
+  }
+
+  .slyme-header .menu-container > img {
+    width: 20px;
+  }
+
+  .slyme-header .mobile-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    background-color: black;
+    min-height: 100px;
+    cursor: pointer;
+  }
+
+  .slyme-header .mobile-menu {
+    padding: 1rem 1.4rem;
+  }
+
+  .slyme-header .mobile-menu nav a {
+    display: block;
+    color: white;
+    margin: 10px 0;
+  }
 }
