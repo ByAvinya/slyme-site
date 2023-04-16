@@ -19,3 +19,10 @@
   background-color: white;
   color: black;
 }
+
+.neo-input {
+  border: none;
+  min-height: 50px;
+  min-width: 200px;
+  outline: none;
+}
