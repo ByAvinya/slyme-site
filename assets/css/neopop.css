@@ -26,3 +26,10 @@
   min-width: 200px;
   outline: none;
 }
+
+@media screen and (max-width: 991px) {
+  .neo-btn {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+}

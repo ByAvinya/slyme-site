@@ -25,3 +25,13 @@
   display: block;
   width: 100%;
 }
+
+@media screen and (max-width: 991px) {
+  .form-container {
+    margin-top: 1rem;
+  }
+
+  .bug-report-form {
+    border: none;
+  }
+}

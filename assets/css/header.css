@@ -42,7 +42,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 991px) {
   .slyme-header-desktop {
     display: none;
   }
