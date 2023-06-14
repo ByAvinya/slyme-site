@@ -15,6 +15,9 @@ main {
   height: calc(100% - 120px);
   background-color: white;
   border-radius: 10px 40% 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .main-section-1 .section-right {
@@ -48,6 +51,31 @@ main {
 
 .main-section-mobile {
   display: none;
+}
+
+.username-label{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.subdomain-text{
+  color: gray;
+  font-size: 14px;
+}
+
+.neo-input{
+  background: transparent;
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
+  color: #686868;
+  margin-right: 10px;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(data-placeholder);
+  pointer-events: none;
+  display: inline; /* For Firefox */
 }
 
 @media screen and (max-width: 1200px) {
