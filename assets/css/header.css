@@ -36,6 +36,11 @@
   border-radius: 50px 60px 1px 50px;
   text-align: center;
   font-weight: 500;
+
+  /* -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  animation: buttonshine 2s;
+  animation-iteration-count: infinite; */
 }
 
 .slyme-header-mobile {
@@ -80,5 +85,19 @@
     display: block;
     color: white;
     margin: 10px 0;
+  }
+}
+
+@keyframes buttonshine {
+  0% {
+    background-color: white;
+  }
+
+  50% {
+    background-color: #5d3a92;
+  }
+
+  100% {
+    background-color: white;
   }
 }

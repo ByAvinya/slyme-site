@@ -26,6 +26,11 @@ a:hover {
   color: gray;
 }
 
+.a-disabled {
+  pointer-events: none;
+  color: gray !important;
+}
+
 .body-parent {
   width: 100%;
   height: 100%;

@@ -24,3 +24,7 @@ setInterval(() => {
     count = 0;
   }
 }, 3000);
+
+document.getElementById("join-button").onclick = function () {
+  window.scrollBy(0, 0.9 * window.innerHeight);
+};
