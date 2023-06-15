@@ -8,7 +8,7 @@ main {
   align-items: center;
   justify-content: center;
 
-  min-height: 900px;
+  min-height: 100vh;
 
   animation: 1s ease-out 0s 1 slideInFromBottom;
 }
@@ -38,15 +38,88 @@ main {
   min-width: 300px;
 }
 
-@media screen and (max-width: 600px) {
+.minisite-container {
+  margin-top: 0rem;
+}
+
+.minisite-container > h3 {
+  font-weight: 600;
+}
+
+.minisite-container > h3,
+h6 {
+  text-align: center;
+}
+
+.minisite-container > div {
+  margin-top: 7rem;
+}
+
+.minisite-container .sitename-display-box {
+  width: 100%;
+  max-width: 1100px;
+  height: 500px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 40px;
+  box-shadow: 1px 1px 20px 1px rgba(167, 167, 167, 0.13);
+  background-color: #fcfcfc;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.sitename-display-box .displayname {
+  animation: fadeIn 3s;
+  animation-iteration-count: infinite;
+}
+
+.sitename-display-box .hanging-card {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+}
+
+.sitename-display-box .hanging-card .content-container {
+  padding: 0.8rem;
+}
+
+.hanging-card .content-container img {
+  width: 35px;
+  height: auto;
+}
+
+.sitename-display-box .hanging-card-1 {
+  top: -30px;
+  left: -40px;
+  transform: rotate(-10deg);
+  background-color: #ffc3dd;
+}
+
+.sitename-display-box .hanging-card-2 {
+  bottom: -90px;
+  left: 90px;
+  transform: rotate(5deg);
+  width: 300px;
+  background-color: #f5fafe;
+}
+
+.sitename-display-box .hanging-card-3 {
+  top: 60px;
+  right: -50px;
+  transform: rotate(10deg);
+  background-color: #ffd4d4;
+}
+
+@media screen and (max-width: 992px) {
+  .minisite-container .sitename-display-box {
+    border-radius: 20px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
   main {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .hero-container {
-    min-height: 600px;
-    /* padding-top: 5rem; */
   }
 
   .hero-container > .hero-logo-container {
@@ -60,6 +133,19 @@ main {
 
   .hero-container > .hero-text-container > h5 {
     font-size: 1.1rem;
+  }
+
+  .minisite-container > div {
+    margin-top: 3rem;
+  }
+
+  .minisite-container .sitename-display-box {
+    border-radius: 10px;
+    height: 200px;
+  }
+
+  .sitename-display-box .hanging-card {
+    display: none;
   }
 }
 
@@ -82,5 +168,23 @@ main {
   100% {
     filter: blur(0);
     transform: translate(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }

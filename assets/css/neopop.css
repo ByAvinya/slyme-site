@@ -15,21 +15,42 @@
   transform: translateY(4px);
 }
 
+.neo-btn:disabled {
+  background-color: #bb7082;
+  box-shadow: none;
+}
+
 .neo-btn-white {
   background-color: white;
   color: black;
 }
 
-.neo-input {
-  border: none;
-  min-height: 50px;
-  min-width: 200px;
-  outline: none;
+.neo-btn-white:disabled {
+  background-color: rgb(173, 173, 173);
+  color: black;
 }
 
-@media screen and (max-width: 991px) {
+.neo-input {
+  border: none;
+  height: 4rem;
+  min-width: 200px;
+  max-width: 100%;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.neo-card {
+  box-shadow: 6px 6px black;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
   .neo-btn {
     padding: 6px;
     font-size: 0.9rem;
+  }
+
+  .neo-input {
+    min-width: 0px;
   }
 }
