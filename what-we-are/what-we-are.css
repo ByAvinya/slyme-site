@@ -7,9 +7,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   min-height: 100vh;
-
+  position: relative;
   animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
@@ -36,6 +35,41 @@ main {
 
 .hero-container .join-button {
   min-width: 300px;
+}
+
+.mockups{
+  position: absolute;
+  -webkit-animation: float 4s infinite ease-in-out;
+            animation: float 4s infinite ease-in-out;
+}
+
+.mockup1{
+    top: 20px;
+    left: 30px;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+.mockup2{
+  top: 70px;
+  right: 40px;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+
+.mockup3{
+  top: 35%;
+  left: 10%;
+  -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+.mockup4{
+  top: 70%;
+  right: 6%;
+  /* transform: rotate(10deg); */
+  -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
 }
 
 .minisite-container {
@@ -186,5 +220,29 @@ h6 {
 
   100% {
     opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 16px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 16px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
