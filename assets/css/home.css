@@ -20,6 +20,14 @@ main {
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 768px) {
+  .main-section-1 .section-left {
+    justify-content: flex-start;
+    height: fit-content;
+  }
+
+}
+
 .main-section-1 .section-right {
   width: 100%;
   height: 100%;
@@ -29,34 +37,49 @@ main {
   overflow: hidden;
 }
 
-.main-section-1 .section-right .skin1{
+.main-section-1 .section-right .skin{
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  /* top: 0;
+  left: 0; */
+}
+
+.main-section-1 .section-right .skin1{
   left: 26.6%;
   height: 334px;
   z-index: 100;
   /* top: 0;
   left: 0; */
 }
+
 .main-section-1 .section-right .skin2{
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
   left: 50%;
   z-index: 100;
   /* top: 0;
   left: 0; */
 }
 .main-section-1 .section-right .skin3{
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
   left: 73%;
   height: 334px;
   z-index: 100;
   /* top: 0;
   left: 0; */
+}
+
+@media screen and (max-width: 768px) {
+  .main-section-1 .section-right .skin{
+    height: 120px;
+  }
+  .main-section-1 .section-right .skin2{
+    height: 160px;
+  }
+  .main-section-1 .section-right .skin3{
+    height: 120px
+  }
+  .main-section-1 .section-right .skin1{
+    height: 120px
+  }
 }
 
 .main-section-1 .section-right .pr-card{
@@ -87,6 +110,15 @@ main {
   top: 10%;
 }
 
+@media screen and (max-width: 768px) {
+  .main-section-1 .section-right .pr-card{
+    width: 80px;
+  }
+  .main-section-1 .section-right .pr-card-website{
+    width: 80px;
+  }
+}
+
 .main-section .section-right .many-more{
   position: absolute;
   bottom: 3%;
@@ -95,6 +127,13 @@ main {
   transform: translate(-50%, 0px);
   font-size: 23px;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main-section .section-right .many-more{
+    font-size: 15px;
+    bottom: 0%;
+  }
 }
 
 .main-section-1 .section-left-bottom {
@@ -173,10 +212,16 @@ main {
     justify-content: center;
     align-items: center; */
   }
-
-  
-
   .main-section-1 .section-left {
     padding: 2rem 0.8rem;
   }
+  .neo-input{
+    font-size: 15px;
+  }
+
+  .main-section-1 .section-left-bottom{
+    padding: 1.5rem;
+  }
+
+
 }

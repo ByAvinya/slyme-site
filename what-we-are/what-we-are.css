@@ -42,6 +42,11 @@ main {
   -webkit-animation: float 4s infinite ease-in-out;
             animation: float 4s infinite ease-in-out;
 }
+@media screen and (max-width: 991px) {
+  .mockups {
+    display: none;
+  }
+}
 
 .mockup1{
     top: 20px;
