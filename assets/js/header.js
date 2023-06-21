@@ -8,3 +8,17 @@ menuButton.addEventListener("click", () => {
     mobileNavContaner.style.display = "block";
   }
 });
+
+const getpValue = ()=>{
+  const displayNameInput = document.getElementById("display-name-input");
+  const userName = displayNameInput.innerText;
+  if(userName==='') return ;
+  window.open(`https://login.slyme.club/login?username=${userName}`)
+}
+
+const getInputValue = ()=>{
+  const displayNameInput = document.getElementById("display-name-input-mobile");
+  const userName = displayNameInput.value;
+  if(userName==='') return ;
+  window.open(`https://login.slyme.club/login?username=${userName}`)
+}

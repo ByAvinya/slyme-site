@@ -126,6 +126,7 @@
                     placeholder="Enter your username"
                   /> -->
                   <p
+                    id="display-name-input"
                     contenteditable="true"
                     class="neo-input"
                     spellcheck="false"
@@ -133,10 +134,8 @@
                   ></p>
                   <span class="subdomain-text">.slyme.club</span>
                 </div>
-                <a href="https://login.slyme.club/login?username=" >
-                  <label for="neo-input" class="username-label neo-btn">Get yours today</label
+                  <label onclick="getpValue()" for="neo-input" class="username-label neo-btn">Get yours today</label
                   >
-                </a>
               </div>
             </div>
             <div class="col-5">
@@ -189,24 +188,23 @@
             </div>
             <div class="section-left-bottom">
               <div>
-                <!-- <input
-                  id="neo-input"
+                <input
+                  id="display-name-input-mobile"
                   class="neo-input"
                   type="text"
                   placeholder="Enter your username"
-                /> -->
-                <p
+                />
+                <!-- <p
+                  id="display-name-input"
                   contenteditable="true"
                   class="neo-input"
                   spellcheck="false"
                   data-placeholder="Enter your username"
-                ></p>
+                ></p> -->
                 <span class="subdomain-text">.slyme.club</span>
               </div>
-              <a href="https://login.slyme.club/login?username=" >
-                <label for="neo-input" class="username-label neo-btn">Get yours today</label
+                <label onclick="getInputValue()" for="neo-input" class="username-label neo-btn">Get yours today</label
                 >
-              </a>
             </div>
           </div>
         </section>

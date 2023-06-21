@@ -52,5 +52,6 @@
 
   .neo-input {
     min-width: 0px;
+    border-bottom: none;
   }
 }

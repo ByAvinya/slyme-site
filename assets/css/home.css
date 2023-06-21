@@ -164,6 +164,7 @@ main {
 
 .username-label{
   font-weight: 600;
+  cursor: pointer;
 }
 
 .subdomain-text{
