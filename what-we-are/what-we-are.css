@@ -37,10 +37,10 @@ main {
   min-width: 300px;
 }
 
-.mockups{
+.mockups {
   position: absolute;
   -webkit-animation: float 4s infinite ease-in-out;
-            animation: float 4s infinite ease-in-out;
+  animation: float 4s infinite ease-in-out;
 }
 @media screen and (max-width: 991px) {
   .mockups {
@@ -48,40 +48,37 @@ main {
   }
 }
 
-.mockup1{
-    top: 20px;
-    left: 30px;
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
+.mockup1 {
+  top: 20px;
+  left: 30px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
-.mockup2{
+.mockup2 {
   top: 70px;
   right: 40px;
-    -webkit-animation-delay: 0.5s;
-            animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
-.mockup3{
+.mockup3 {
   top: 35%;
   left: 10%;
   -webkit-animation-delay: 0s;
-            animation-delay: 0s;
+  animation-delay: 0s;
 }
 
-.mockup4{
+.mockup4 {
   top: 70%;
   right: 6%;
   /* transform: rotate(10deg); */
   -webkit-animation-delay: 0.5s;
-            animation-delay: 0.5s;
-}
-
-.minisite-container {
-  margin-top: 0rem;
+  animation-delay: 0.5s;
 }
 
 .minisite-container > h3 {
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -146,6 +143,54 @@ h6 {
   right: -50px;
   transform: rotate(10deg);
   background-color: #ffd4d4;
+}
+
+.services-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.services-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 1rem;
+}
+
+.who-should-use-container .heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.who-should-use-container .card {
+  border: none;
+}
+
+.who-should-use-container .card-image {
+  width: 100%;
+  height: auto;
+}
+
+.who-should-use-container .card-text {
+  font-size: 1.38rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.who-should-use-container .card-btn {
+  margin-top: 1.8rem;
+}
+
+.features-container .text-container {
+  max-width: 500px;
+}
+
+.features-container .text-container > h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.features-container .text-container > p {
+  font-size: 1.125rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -227,7 +272,6 @@ h6 {
     opacity: 0;
   }
 }
-
 
 @-webkit-keyframes float {
   0% {

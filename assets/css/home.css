@@ -1,11 +1,14 @@
 main {
   width: 100%;
+  min-height: calc(100vh - 130px);
   height: calc(100vh - 130px);
   margin-top: 10px;
+  padding-bottom: 1rem;
 }
 
 .main-section {
   width: 100%;
+  min-height: 100%;
   height: 100%;
   padding: 0 20px;
 }
@@ -20,14 +23,6 @@ main {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 768px) {
-  .main-section-1 .section-left {
-    justify-content: flex-start;
-    height: fit-content;
-  }
-
-}
-
 .main-section-1 .section-right {
   width: 100%;
   height: 100%;
@@ -37,7 +32,7 @@ main {
   overflow: hidden;
 }
 
-.main-section-1 .section-right .skin{
+.main-section-1 .section-right .skin {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -45,7 +40,7 @@ main {
   left: 0; */
 }
 
-.main-section-1 .section-right .skin1{
+.main-section-1 .section-right .skin1 {
   left: 26.6%;
   height: 334px;
   z-index: 100;
@@ -53,13 +48,13 @@ main {
   left: 0; */
 }
 
-.main-section-1 .section-right .skin2{
+.main-section-1 .section-right .skin2 {
   left: 50%;
   z-index: 100;
   /* top: 0;
   left: 0; */
 }
-.main-section-1 .section-right .skin3{
+.main-section-1 .section-right .skin3 {
   left: 73%;
   height: 334px;
   z-index: 100;
@@ -68,58 +63,65 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .main-section-1 .section-right .skin{
+  .main-section-1 .section-left {
+    justify-content: flex-start;
+    height: fit-content;
+  }
+
+  .main-section-1 .section-right .skin {
     height: 120px;
   }
-  .main-section-1 .section-right .skin2{
+  .main-section-1 .section-right .skin2 {
     height: 160px;
   }
-  .main-section-1 .section-right .skin3{
-    height: 120px
+  .main-section-1 .section-right .skin3 {
+    height: 120px;
   }
-  .main-section-1 .section-right .skin1{
-    height: 120px
+  .main-section-1 .section-right .skin1 {
+    height: 120px;
   }
 }
 
-.main-section-1 .section-right .pr-card{
+.main-section-1 .section-right .pr-card {
   position: absolute;
   width: 175px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.main-section-1 .section-right .pr-card-spotify{
+.main-section-1 .section-right .pr-card-spotify {
   transform: rotate(-14deg);
   top: 13%;
   left: 8%;
 }
-.main-section-1 .section-right .pr-card-yt{
+.main-section-1 .section-right .pr-card-yt {
   bottom: 4%;
   right: 8%;
   transform: rotate(9deg);
 }
-.main-section-1 .section-right .pr-card-website{
+.main-section-1 .section-right .pr-card-website {
   width: 226px;
   bottom: 7%;
   left: 34px;
   transform: rotate(-6deg);
 }
-.main-section-1 .section-right .pr-card-twitter{
+.main-section-1 .section-right .pr-card-twitter {
   right: 9%;
   transform: rotate(9deg);
   top: 10%;
 }
 
 @media screen and (max-width: 768px) {
-  .main-section-1 .section-right .pr-card{
+  .main-section-1 .section-right .pr-card {
     width: 80px;
   }
-  .main-section-1 .section-right .pr-card-website{
+  .main-section-1 .section-right .pr-card-website {
     width: 80px;
   }
 }
 
-.main-section .section-right .many-more{
+.main-section .section-right .many-more {
   position: absolute;
   bottom: 3%;
   left: 50%;
@@ -130,7 +132,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .main-section .section-right .many-more{
+  .main-section .section-right .many-more {
     font-size: 15px;
     bottom: 0%;
   }
@@ -162,17 +164,17 @@ main {
   display: none;
 }
 
-.username-label{
+.username-label {
   font-weight: 600;
   cursor: pointer;
 }
 
-.subdomain-text{
+.subdomain-text {
   color: gray;
   font-size: 14px;
 }
 
-.neo-input{
+.neo-input {
   background: transparent;
   display: inline;
   font-size: 20px;
@@ -181,7 +183,7 @@ main {
   margin-right: 10px;
 }
 
-[contenteditable=true]:empty:before{
+[contenteditable="true"]:empty:before {
   content: attr(data-placeholder);
   pointer-events: none;
   display: inline; /* For Firefox */
@@ -216,13 +218,11 @@ main {
   .main-section-1 .section-left {
     padding: 2rem 0.8rem;
   }
-  .neo-input{
+  .neo-input {
     font-size: 15px;
   }
 
-  .main-section-1 .section-left-bottom{
+  .main-section-1 .section-left-bottom {
     padding: 1.5rem;
   }
-
-
 }
