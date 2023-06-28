@@ -28,3 +28,21 @@ setInterval(() => {
 document.getElementById("join-button").onclick = function () {
   window.scrollBy(0, 0.9 * window.innerHeight);
 };
+
+// $(".features-container > div").slick({
+//   slidesToShow: 1,
+//   infinite: true,
+//   slidesToScrol: 1,
+//   // arrows: true,
+//   autoplay: true,
+//   autoplaySpeed: 3000,
+//   pauseOnFocus: false,
+//   pauseOnHover: false,
+//   swipeToSlide: true,
+// });
+
+// $("#services-icon-container").slick({
+//   // infinite: true,
+//   // autoplay: true,
+//   // autoplaySpeed: 1000,
+// });
