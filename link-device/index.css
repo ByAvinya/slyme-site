@@ -1,0 +1,73 @@
+/* Link device form section */
+.link-device-section {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.link-device-section > div {
+  width: 700px;
+  max-width: 100%;
+}
+
+.link-device-section .section-heading {
+  text-align: center;
+}
+
+.link-device-form-container {
+  margin-top: 3rem;
+}
+
+/* Link success section */
+.link-success-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(31, 31, 31, 0.63);
+  display: none;
+}
+
+.link-success-dialog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.link-success-dialog-container .success-dialog {
+  background-color: white;
+  border-radius: 20px;
+  width: 500px;
+  padding: 2rem 4rem;
+}
+
+.link-success-dialog-container .dialog-image {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.link-success-dialog-container .dialog-content-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .link-success-dialog-container .dialog-image {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .link-device-section {
+    padding: 0 2rem;
+    margin-top: 2rem;
+  }
+
+  .link-success-dialog-container .success-dialog {
+    padding: 2rem 1rem;
+  }
+}

@@ -1,0 +1,33 @@
+.form-group {
+  margin: 1rem 0;
+}
+
+.form-label {
+  display: block;
+  margin: 0;
+  font-weight: 500;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+}
+
+.form-group-note {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.response-success {
+  font-size: 1rem;
+}
+
+.response-error {
+  color: red;
+}
+
+.response-success {
+  color: green;
+}

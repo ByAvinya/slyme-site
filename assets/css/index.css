@@ -23,7 +23,8 @@ a {
 }
 
 a:hover {
-  color: gray;
+  color: #5d3a92;
+  text-decoration: underline;
 }
 
 .a-disabled {
@@ -38,6 +39,11 @@ a:hover {
   min-height: 100vh;
 }
 
+.slyme-login-link {
+  color: #5d3a92;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1200px) {
   :root {
     font-size: 15px;
@@ -46,6 +52,6 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   :root {
-    font-size: 13px;
+    font-size: 14px;
   }
 }

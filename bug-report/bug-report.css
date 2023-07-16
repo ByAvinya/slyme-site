@@ -11,21 +11,6 @@
   padding: 2rem;
 }
 
-.bug-report-form .form-group {
-  margin: 1rem 0;
-}
-
-.bug-report-form .form-label {
-  display: block;
-  margin: 0;
-  font-weight: 500;
-}
-
-.bug-report-form .form-input {
-  display: block;
-  width: 100%;
-}
-
 @media screen and (max-width: 991px) {
   .form-container {
     margin-top: 1rem;
